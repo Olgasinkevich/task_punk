@@ -1,10 +1,17 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import WebHeaderPage from "../WebHeaderPage";
+import Content from "@/app/Content";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+      <main className={styles.main}>
+
+        <WebHeaderPage/>
+          <Content/>
+
+
+      {/*<div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
@@ -17,7 +24,7 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
+              src="/assets/logo.svg"
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -89,7 +96,8 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </main>
+      </div>*/}
+
+      </main>
   );
 }
